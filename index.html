@@ -3,13 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- === PRIMARY SEO METATAGS === -->
     <title>Noor Motors | Premium Electric Bikes Showroom Karachi</title>
+    <meta name="description" content="Noor Motors is Karachi's premier destination for high-quality, smart electric scooters and e-bikes. Easy installment plans available at our Landhi & Gulistan-e-Jauhar showrooms. Explore Evee S1, Air, Gen-Z and Flipper.">
+    <meta name="keywords" content="electric bike karachi, e-bike pakistan, electric scooter price in karachi, evee s1 air karachi, noor motors karachi, e-bikes landhi, electric scooter gulistan-e-jauhar, cheap electric bike installment, ev showroom karachi">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Noor Motors">
+
+    <!-- === SOCIAL MEDIA SEO (Open Graph / Facebook / WhatsApp Cards) === -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Noor Motors | Premium Electric Bikes Showroom Karachi">
+    <meta property="og:description" content="Explore smart e-bikes and scooters with premium range and easy monthly installments in Karachi.">
+    <meta property="og:image" content="assets/images/features-banner.png">
+    <meta property="og:url" content="https://yourusername.github.io/noor-motors/">
+
+    <!-- === TWITTER CARD SEO === -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Noor Motors | Electric Bikes Karachi">
+    <meta name="twitter:description" content="Premium electric scooters available on easy installments in Karachi. Visit our Landhi or Jauhar branches.">
+    <meta name="twitter:image" content="assets/images/features-banner.png">
+
+    <!-- === FAVICON DEPLOYMENT === -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/favicon.png">
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom Theme Config -->
-    <script>
+    <script script>
         tailwind.config = {
             theme: {
                 extend: {
@@ -44,7 +68,7 @@
                     <a href="#inventory" class="text-gray-600 hover:text-evGreen transition">Our E-Bikes</a>
                     <a href="#about" class="text-gray-600 hover:text-evGreen transition">Why Choose Us</a>
                 </div>
-                <!-- Action Button (New Number Updated) -->
+                <!-- Action Button -->
                 <div class="flex items-center gap-3">
                     <a href="https://wa.me/923339682707" target="_blank" class="bg-evGreen text-white px-4 py-2 sm:px-5 sm:py-2.5 rounded-full font-semibold hover:bg-opacity-90 transition flex items-center gap-2 text-xs sm:text-sm shadow-md">
                         <i class="fab fa-whatsapp text-lg"></i> <span class="hidden sm:inline">WhatsApp:</span> 0333 9682707
@@ -91,7 +115,7 @@
     <!-- 3. INVENTORY SECTION -->
     <main id="inventory" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
         <div class="text-center max-w-3xl mx-auto mb-12">
-            <h2 class="text-2xl sm:text-4xl font-extrabold text-evDark">Featured Electric Bikes</h2>
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-evDark">Featured Electric Bikes in Karachi</h2>
             <p class="mt-3 text-sm sm:text-base text-gray-500">
                 Choose from our top-rated smart and compact e-scooters with easy installments available.
             </p>
@@ -112,7 +136,7 @@
         </div>
     </section>
 
-    <!-- 5. FOOTER (With New Addresses & Branches) -->
+    <!-- 5. FOOTER -->
     <footer class="bg-evDark text-gray-400 py-12 w-full text-center sm:text-left border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-10">
             <div>
@@ -146,7 +170,7 @@
         </div>
     </footer>
 
-    <!-- EMBEDDED JAVASCRIPT DATA (With Updated Phone Link) -->
+    <!-- EMBEDDED JAVASCRIPT DATA -->
     <script>
         const bikeData = [
           {
@@ -212,7 +236,6 @@
             gridContainer.innerHTML = ""; 
 
             bikeData.forEach(bike => {
-                // نیا واٹس ایپ نمبر یہاں لنک میں استعمال کیا گیا ہے
                 const encodedMessage = encodeURIComponent(`Assalam-o-Alaikum Noor Motors, I am interested in "${bike.name}" (${bike.price}/-). Please share the installment plans and details.`);
                 const whatsappUrl = `https://wa.me/923339682707?text=${encodedMessage}`;
 
@@ -221,7 +244,7 @@
                 const bikeCard = `
                     <div class="bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden">
                         <div class="bg-gray-50 p-6 flex justify-center items-center h-52 sm:h-64 relative">
-                            <img src="${bike.image}" alt="${bike.name}" class="max-h-full max-w-full object-contain" onerror="this.src='https://via.placeholder.com/300x200?text=${bike.name}'">
+                            <img src="${bike.image}" alt="${bike.name} Electric Bike" class="max-h-full max-w-full object-contain">
                             <span class="absolute top-3 right-3 bg-evDark text-white text-[10px] font-bold px-2 py-1 rounded-md">Installments Available</span>
                         </div>
                         <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
