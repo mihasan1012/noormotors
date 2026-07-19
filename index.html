@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noor Motors | Premium Electric Bikes Showroom Karachi</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Theme Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        evGreen: '#7cb043',     /* لائم گرین */
+                        evDark: '#111827',      /* ڈارک بیک گراؤنڈ */
+                        evCard: '#1f2937'       
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen justify-between">
+
+    <!-- 1. HEADER / NAVBAR -->
+    <nav class="bg-white border-b border-gray-100 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Official Brand Logo Image -->
+                <div class="flex items-center">
+                    <img src="assets/images/logo.png" alt="Noor Motors Logo" class="h-12 sm:h-16 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span class="text-xl font-black tracking-wider text-evDark hidden">NOOR<span class="text-evGreen">.</span>MOTORS</span>
+                </div>
+                <!-- Desktop Links -->
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="index.html" class="text-evGreen">Home</a>
+                    <a href="#inventory" class="text-gray-600 hover:text-evGreen transition">Our E-Bikes</a>
+                    <a href="#about" class="text-gray-600 hover:text-evGreen transition">Why Choose Us</a>
+                </div>
+                <!-- Action Button (New Number Updated) -->
+                <div class="flex items-center gap-3">
+                    <a href="https://wa.me/923339682707" target="_blank" class="bg-evGreen text-white px-4 py-2 sm:px-5 sm:py-2.5 rounded-full font-semibold hover:bg-opacity-90 transition flex items-center gap-2 text-xs sm:text-sm shadow-md">
+                        <i class="fab fa-whatsapp text-lg"></i> <span class="hidden sm:inline">WhatsApp:</span> 0333 9682707
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. HERO BANNER -->
+    <header class="relative bg-evDark text-white py-16 sm:py-24 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-green-900/30 via-evDark to-evDark"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="text-center md:text-left">
+                <span class="bg-evGreen/10 border border-evGreen/30 text-evGreen text-xs uppercase font-bold tracking-widest px-3 py-1 rounded-full inline-block">
+                    <i class="fas fa-leaf mr-1"></i> 100% Electric, Zero Emission
+                </span>
+                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mt-6 leading-tight">
+                    A Ride That Changes <br><span class="text-evGreen">Your Lifestyle.</span>
+                </h1>
+                <p class="mt-4 text-base sm:text-lg text-gray-300 max-w-xl mx-auto md:mx-0">
+                    Experience the future of urban commuting in Karachi. High performance, smart tech, long range, and easy installments.
+                </p>
+                <div class="mt-8 flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="#inventory" class="bg-evGreen text-white px-6 py-3 sm:px-8 sm:py-3.5 rounded-xl font-bold hover:bg-opacity-90 transition shadow-lg w-full sm:w-auto text-center">
+                        Explore Catalog
+                    </a>
+                </div>
+            </div>
+            <!-- Showroom Highlight Card -->
+            <div class="flex justify-center relative">
+                <div class="absolute w-60 h-60 bg-evGreen/20 rounded-full blur-3xl -z-10"></div>
+                <div class="text-center p-6 sm:p-8 border border-gray-800 rounded-2xl bg-evDark/50 backdrop-blur-sm w-full max-w-sm flex flex-col items-center justify-center">
+                    <img src="assets/images/logo.png" alt="Noor Motors" class="h-16 mb-4 object-contain invert brightness-200">
+                    <p class="text-gray-400 text-sm sm:text-base">Smart | Stylish | Powerful</p>
+                    <div class="mt-4 inline-block bg-white/5 text-[11px] text-gray-300 px-3 py-1.5 rounded-lg">
+                        <i class="fas fa-map-marker-alt text-evGreen mr-1"></i> Landhi & Gulistan-e-Jauhar, Karachi
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. INVENTORY SECTION -->
+    <main id="inventory" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-evDark">Featured Electric Bikes</h2>
+            <p class="mt-3 text-sm sm:text-base text-gray-500">
+                Choose from our top-rated smart and compact e-scooters with easy installments available.
+            </p>
+        </div>
+
+        <div id="bikes-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <!-- Dynamic Cards Load Here -->
+        </div>
+    </main>
+
+    <!-- 4. BRAND VALUES / OFFICIAL FEATURES BANNER -->
+    <section id="about" class="bg-white py-12 border-t border-b border-gray-100 w-full">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-xl font-bold text-evDark mb-8 uppercase tracking-wider">Our Core Commitment</h3>
+            <div class="w-full flex justify-center">
+                <img src="assets/images/features-banner.png" alt="Noor Motors Features" class="w-full max-w-4xl object-contain shadow-sm rounded-xl" onerror="this.src='https://via.placeholder.com/800x200?text=Electric+Future+|+Trust+|+Smart+Mobility'">
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FOOTER (With New Addresses & Branches) -->
+    <footer class="bg-evDark text-gray-400 py-12 w-full text-center sm:text-left border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div>
+                <img src="assets/images/logo.png" alt="Noor Motors Footer" class="h-10 mb-4 object-contain invert brightness-200 mx-auto sm:mx-0">
+                <p class="mt-3 text-xs sm:text-sm text-gray-400">Your premier destination for high-quality and eco-friendly electric scooters in Karachi.</p>
+                <p class="text-xs sm:text-sm flex items-center justify-center sm:justify-start gap-2 mt-4 text-white"><i class="fas fa-phone-alt text-evGreen"></i> 0333 9682707 (WhatsApp Only)</p>
+            </div>
+            <!-- Landhi Branch -->
+            <div class="bg-gray-900/40 p-5 rounded-xl border border-gray-800">
+                <h4 class="text-white font-bold mb-3 text-sm flex items-center justify-center sm:justify-start gap-2">
+                    <i class="fas fa-map-marker-alt text-evGreen"></i> Landhi Branch
+                </h4>
+                <p class="text-xs leading-relaxed text-gray-300">
+                    Shop No. 2, Gulistan Society,<br>
+                    Quaid Abad, Landhi, Karachi.
+                </p>
+            </div>
+            <!-- Gulistan-e-Jauhar Branch -->
+            <div class="bg-gray-900/40 p-5 rounded-xl border border-gray-800">
+                <h4 class="text-white font-bold mb-3 text-sm flex items-center justify-center sm:justify-start gap-2">
+                    <i class="fas fa-map-marker-alt text-evGreen"></i> Gulistan-e-Jauhar Branch
+                </h4>
+                <p class="text-xs leading-relaxed text-gray-300">
+                    Sonehri Appartment, Pehlwan Goth,<br>
+                    Gulsitan-e-Jauhar, Karachi.
+                </p>
+            </div>
+        </div>
+        <div class="mt-10 pt-6 border-t border-gray-800 text-center text-xs px-4">
+            &copy; 2026 Noor Motors. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- EMBEDDED JAVASCRIPT DATA (With Updated Phone Link) -->
+    <script>
+        const bikeData = [
+          {
+            "name": "Evee S1 3W",
+            "tagline": "Smart | Stylish | Electric",
+            "price": "245,000",
+            "image": "assets/images/s1-3w.png",
+            "colors": ["Black", "White"],
+            "specs": { "top_speed": "30-40 KM/hr", "range": "50-70 KM", "battery_type": "Graphene", "charging_time": "7-8 Hours" }
+          },
+          {
+            "name": "Evee S1 Air",
+            "tagline": "Powered by Phylion Lithium",
+            "price": "319,900",
+            "image": "assets/images/s1-air.png",
+            "colors": ["Orange", "Silver", "Black"],
+            "specs": { "top_speed": "65-70 KM/hr", "range": "70-90 KM", "battery_type": "Lithium", "charging_time": "4-5 Hours" }
+          },
+          {
+            "name": "Evee Flipper",
+            "tagline": "Smart | Safe | Fun",
+            "price": "97,000",
+            "image": "assets/images/flipper.png",
+            "colors": ["Red", "Black"],
+            "specs": { "top_speed": "35 KM/hr", "range": "35 KM", "battery_type": "Graphene", "charging_time": "7-8 Hours" }
+          },
+          {
+            "name": "Evee Gen-Z Pro",
+            "tagline": "Powered by Phylion Lithium",
+            "price": "239,000",
+            "image": "assets/images/gen-z-pro.png",
+            "colors": ["Red", "White"],
+            "specs": { "top_speed": "45-50 KM/hr", "range": "60-80 KM", "battery_type": "Lithium", "charging_time": "4-5 Hours" }
+          },
+          {
+            "name": "Evee Gen-Z",
+            "tagline": "Smart | Stylish | Powerful",
+            "price": "177,900",
+            "image": "assets/images/gen-z.png",
+            "colors": ["Grey Black", "Ruby Black", "Gold Black"],
+            "specs": { "top_speed": "45-50 KM/hr", "range": "70-80 KM", "battery_type": "Graphene", "charging_time": "7-8 Hours" }
+          },
+          {
+            "name": "Evee LX",
+            "tagline": "Stylish | Smart | Efficient",
+            "price": "160,000",
+            "image": "assets/images/lx.png",
+            "colors": ["White", "Black"],
+            "specs": { "top_speed": "40-45 KM/hr", "range": "70-90 KM", "battery_type": "Graphene", "charging_time": "7-8 Hours" }
+          },
+          {
+            "name": "Evee Mito+",
+            "tagline": "Smart | Compact | Powerful",
+            "price": "137,000",
+            "image": "assets/images/mito-plus.png",
+            "colors": ["Black", "White"],
+            "specs": { "top_speed": "40-45 KM/hr", "range": "70-90 KM", "battery_type": "Graphene", "charging_time": "7-8 Hours" }
+          }
+        ];
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const gridContainer = document.getElementById("bikes-grid");
+            gridContainer.innerHTML = ""; 
+
+            bikeData.forEach(bike => {
+                // نیا واٹس ایپ نمبر یہاں لنک میں استعمال کیا گیا ہے
+                const encodedMessage = encodeURIComponent(`Assalam-o-Alaikum Noor Motors, I am interested in "${bike.name}" (${bike.price}/-). Please share the installment plans and details.`);
+                const whatsappUrl = `https://wa.me/923339682707?text=${encodedMessage}`;
+
+                let colorsHtml = bike.colors.map(c => `<span class="text-[11px] font-medium bg-gray-100 text-gray-700 px-2 py-0.5 rounded-full border border-gray-200">${c}</span>`).join(' ');
+
+                const bikeCard = `
+                    <div class="bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden">
+                        <div class="bg-gray-50 p-6 flex justify-center items-center h-52 sm:h-64 relative">
+                            <img src="${bike.image}" alt="${bike.name}" class="max-h-full max-w-full object-contain" onerror="this.src='https://via.placeholder.com/300x200?text=${bike.name}'">
+                            <span class="absolute top-3 right-3 bg-evDark text-white text-[10px] font-bold px-2 py-1 rounded-md">Installments Available</span>
+                        </div>
+                        <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
+                            <div>
+                                <div class="text-[10px] text-evGreen font-bold uppercase tracking-wider">${bike.tagline}</div>
+                                <h3 class="text-xl sm:text-2xl font-bold text-evDark mt-1">${bike.name}</h3>
+                                <div class="text-lg sm:text-xl font-extrabold text-evDark mt-1">PKR ${bike.price}/-</div>
+                                
+                                <div class="grid grid-cols-2 gap-2 sm:gap-3 my-4 bg-gray-50 p-3 rounded-xl text-[11px] sm:text-xs text-gray-600">
+                                    <div class="flex items-center gap-1.5"><i class="fas fa-tachometer-alt text-evGreen"></i><span>${bike.specs.top_speed}</span></div>
+                                    <div class="flex items-center gap-1.5"><i class="fas fa-road text-evGreen"></i><span>${bike.specs.range}</span></div>
+                                    <div class="flex items-center gap-1.5"><i class="fas fa-battery-full text-evGreen"></i><span>${bike.specs.battery_type}</span></div>
+                                    <div class="flex items-center gap-1.5"><i class="fas fa-clock text-evGreen"></i><span>${bike.specs.charging_time}</span></div>
+                                </div>
+                                <div class="mt-2 flex flex-wrap gap-1 items-center"><span class="text-[11px] text-gray-400 font-medium mr-1">Colors:</span>${colorsHtml}</div>
+                            </div>
+                            <div class="mt-5"><a href="${whatsappUrl}" target="_blank" class="w-full text-center bg-evDark hover:bg-evGreen text-white font-bold py-3 px-4 rounded-xl transition flex items-center justify-center gap-2 text-sm shadow-md"><i class="fab fa-whatsapp text-lg"></i> Book / Inquire Now</a></div>
+                        </div>
+                    </div>`;
+                gridContainer.innerHTML += bikeCard;
+            });
+        });
+    </script>
+</body>
+</html>

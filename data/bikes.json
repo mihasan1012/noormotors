@@ -1,0 +1,114 @@
+[
+  {
+    "id": "evee-s1-3w",
+    "name": "Evee S1 3W",
+    "tagline": "Smart | Stylish | Electric",
+    "price": "245,000",
+    "image": "assets/images/s1-3w.png",
+    "colors": ["Black", "White"],
+    "specs": {
+      "top_speed": "30-40 KM/hr",
+      "motor_power": "1200W",
+      "battery_type": "Chilwee Graphene",
+      "battery_power": "60V 36AH",
+      "charging_time": "7-8 Hours",
+      "range": "50-70 KM"
+    }
+  },
+  {
+    "id": "evee-s1-air",
+    "name": "Evee S1 Air",
+    "tagline": "Powered by Phylion Lithium",
+    "price": "319,900",
+    "image": "assets/images/s1-air.png",
+    "colors": ["Orange", "Silver", "Black"],
+    "specs": {
+      "top_speed": "65-70 KM/hr",
+      "motor_power": "2200W-3000W",
+      "battery_type": "Phylion Lithium",
+      "battery_power": "76.8V 32AH",
+      "charging_time": "4-5 Hours",
+      "range": "70-90 KM"
+    }
+  },
+  {
+    "id": "evee-flipper",
+    "name": "Evee Flipper",
+    "tagline": "Smart | Safe | Fun",
+    "price": "97,000",
+    "image": "assets/images/flipper.png",
+    "colors": ["Red", "Black"],
+    "specs": {
+      "top_speed": "35 KM/hr",
+      "motor_power": "350-550 Watts",
+      "battery_type": "Chilwee Graphene",
+      "battery_power": "48V 13AH",
+      "charging_time": "7-8 Hours",
+      "range": "35 KM"
+    }
+  },
+  {
+    "id": "evee-gen-z-pro",
+    "name": "Evee Gen-Z Pro",
+    "tagline": "Powered by Phylion Lithium",
+    "price": "239,000",
+    "image": "assets/images/gen-z-pro.png",
+    "colors": ["Red", "White"],
+    "specs": {
+      "top_speed": "45-50 KM/hr",
+      "motor_power": "1000W-1800W",
+      "battery_type": "Phylion Lithium",
+      "battery_power": "76.8V 30AH",
+      "charging_time": "4-5 Hours",
+      "range": "60-80 KM"
+    }
+  },
+  {
+    "id": "evee-gen-z",
+    "name": "Evee Gen-Z",
+    "tagline": "Smart | Stylish | Powerful",
+    "price": "177,900",
+    "image": "assets/images/gen-z.png",
+    "colors": ["Grey Black", "Ruby Black", "Gold Black"],
+    "specs": {
+      "top_speed": "45-50 KM/hr",
+      "motor_power": "1000W-1500W",
+      "battery_type": "Chilwee Graphene",
+      "battery_power": "72V 32AH",
+      "charging_time": "7-8 Hours",
+      "range": "70-80 KM"
+    }
+  },
+  {
+    "id": "evee-lx",
+    "name": "Evee LX",
+    "tagline": "Stylish | Smart | Efficient",
+    "price": "160,000",
+    "image": "assets/images/lx.png",
+    "colors": ["White", "Black"],
+    "specs": {
+      "top_speed": "40-45 KM/hr",
+      "motor_power": "1000 Watts",
+      "battery_type": "Chilwee Graphene",
+      "battery_power": "60V 32AH",
+      "charging_time": "7-8 Hours",
+      "range": "70-90 KM"
+    }
+  },
+  {
+    "id": "evee-mito-plus",
+    "name": "Evee Mito+",
+    "tagline": "Smart | Compact | Powerful",
+    "price": "137,000",
+    "image": "assets/images/mito-plus.png",
+    "colors": ["Black", "White"],
+    "specs": {
+      "top_speed": "40-45 KM/hr",
+      "motor_power": "600-1000 Watts",
+      "battery_type": "Chilwee Graphene",
+      "battery_power": "60V 32AH",
+      "charging_time": "7-8 Hours",
+      "range": "70-90 KM"
+    }
+  }
+]
